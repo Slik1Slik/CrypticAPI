@@ -18,6 +18,7 @@
 		569C860D28E5D32500994E47 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860C28E5D32500994E47 /* Task.swift */; };
 		569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860F28E5D48200994E47 /* DataTaskResult.swift */; };
 		569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */; };
+		569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861828E5DB5C00994E47 /* Date Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		569C860C28E5D32500994E47 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		569C860F28E5D48200994E47 /* DataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResult.swift; sourceTree = "<group>"; };
 		569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultHandler.swift; sourceTree = "<group>"; };
+		569C861828E5DB5C00994E47 /* Date Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				569C860428E5CD9800994E47 /* Errors */,
 				569C860B28E5D31400994E47 /* Task */,
 				569C860E28E5D47200994E47 /* Result */,
+				569C861728E5DB3E00994E47 /* Constants */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
 				569C85ED28E5C92500994E47 /* SceneDelegate.swift */,
 				569C85EF28E5C92500994E47 /* ViewController.swift */,
@@ -104,6 +107,14 @@
 				569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		569C861728E5DB3E00994E47 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				569C861828E5DB5C00994E47 /* Date Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
+				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
