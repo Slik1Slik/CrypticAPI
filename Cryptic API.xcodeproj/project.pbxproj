@@ -14,6 +14,7 @@
 		569C85F828E5C92600994E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569C85F628E5C92600994E47 /* LaunchScreen.storyboard */; };
 		569C860628E5CDA700994E47 /* DescribedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860528E5CDA700994E47 /* DescribedError.swift */; };
 		569C860828E5CDB000994E47 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860728E5CDB000994E47 /* AnyError.swift */; };
+		569C860A28E5D17D00994E47 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860928E5D17D00994E47 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		569C85F928E5C92600994E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		569C860528E5CDA700994E47 /* DescribedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribedError.swift; sourceTree = "<group>"; };
 		569C860728E5CDB000994E47 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		569C860928E5D17D00994E47 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				569C860528E5CDA700994E47 /* DescribedError.swift */,
 				569C860728E5CDB000994E47 /* AnyError.swift */,
+				569C860928E5D17D00994E47 /* APIError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
+				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
