@@ -23,6 +23,7 @@
 		569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861D28E5DEA300994E47 /* JSONDataFormatter.swift */; };
 		569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861F28E5E08A00994E47 /* DataTaskResultDataFormatter.swift */; };
 		569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862328E5F3FD00994E47 /* HTTPMethod.swift */; };
+		569C862628E5F45200994E47 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862528E5F45200994E47 /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		569C861D28E5DEA300994E47 /* JSONDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataFormatter.swift; sourceTree = "<group>"; };
 		569C861F28E5E08A00994E47 /* DataTaskResultDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultDataFormatter.swift; sourceTree = "<group>"; };
 		569C862328E5F3FD00994E47 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		569C862528E5F45200994E47 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				569C862328E5F3FD00994E47 /* HTTPMethod.swift */,
+				569C862528E5F45200994E47 /* APIRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,
+				569C862628E5F45200994E47 /* APIRequest.swift in Sources */,
 				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
