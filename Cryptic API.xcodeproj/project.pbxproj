@@ -17,6 +17,7 @@
 		569C860A28E5D17D00994E47 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860928E5D17D00994E47 /* APIError.swift */; };
 		569C860D28E5D32500994E47 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860C28E5D32500994E47 /* Task.swift */; };
 		569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860F28E5D48200994E47 /* DataTaskResult.swift */; };
+		569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		569C860928E5D17D00994E47 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		569C860C28E5D32500994E47 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		569C860F28E5D48200994E47 /* DataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResult.swift; sourceTree = "<group>"; };
+		569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				569C860F28E5D48200994E47 /* DataTaskResult.swift */,
+				569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
+				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,
 				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
