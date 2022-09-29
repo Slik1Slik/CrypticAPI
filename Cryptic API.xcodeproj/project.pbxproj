@@ -15,6 +15,7 @@
 		569C860628E5CDA700994E47 /* DescribedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860528E5CDA700994E47 /* DescribedError.swift */; };
 		569C860828E5CDB000994E47 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860728E5CDB000994E47 /* AnyError.swift */; };
 		569C860A28E5D17D00994E47 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860928E5D17D00994E47 /* APIError.swift */; };
+		569C860D28E5D32500994E47 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860C28E5D32500994E47 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		569C860528E5CDA700994E47 /* DescribedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribedError.swift; sourceTree = "<group>"; };
 		569C860728E5CDB000994E47 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		569C860928E5D17D00994E47 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		569C860C28E5D32500994E47 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				569C860428E5CD9800994E47 /* Errors */,
+				569C860B28E5D31400994E47 /* Task */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
 				569C85ED28E5C92500994E47 /* SceneDelegate.swift */,
 				569C85EF28E5C92500994E47 /* ViewController.swift */,
@@ -79,6 +82,14 @@
 				569C860928E5D17D00994E47 /* APIError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		569C860B28E5D31400994E47 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				569C860C28E5D32500994E47 /* Task.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
+				569C860D28E5D32500994E47 /* Task.swift in Sources */,
 				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
