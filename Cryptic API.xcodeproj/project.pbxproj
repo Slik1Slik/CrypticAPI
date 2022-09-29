@@ -12,6 +12,8 @@
 		569C85F028E5C92500994E47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C85EF28E5C92500994E47 /* ViewController.swift */; };
 		569C85F528E5C92600994E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569C85F428E5C92600994E47 /* Assets.xcassets */; };
 		569C85F828E5C92600994E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569C85F628E5C92600994E47 /* LaunchScreen.storyboard */; };
+		569C860628E5CDA700994E47 /* DescribedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860528E5CDA700994E47 /* DescribedError.swift */; };
+		569C860828E5CDB000994E47 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860728E5CDB000994E47 /* AnyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		569C85F428E5C92600994E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569C85F728E5C92600994E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		569C85F928E5C92600994E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569C860528E5CDA700994E47 /* DescribedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribedError.swift; sourceTree = "<group>"; };
+		569C860728E5CDB000994E47 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		569C85EA28E5C92500994E47 /* Cryptic API */ = {
 			isa = PBXGroup;
 			children = (
+				569C860428E5CD9800994E47 /* Errors */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
 				569C85ED28E5C92500994E47 /* SceneDelegate.swift */,
 				569C85EF28E5C92500994E47 /* ViewController.swift */,
@@ -62,6 +67,15 @@
 				569C85F928E5C92600994E47 /* Info.plist */,
 			);
 			path = "Cryptic API";
+			sourceTree = "<group>";
+		};
+		569C860428E5CD9800994E47 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				569C860528E5CDA700994E47 /* DescribedError.swift */,
+				569C860728E5CDB000994E47 /* AnyError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
+				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
