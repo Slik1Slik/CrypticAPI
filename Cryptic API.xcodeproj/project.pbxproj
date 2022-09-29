@@ -24,6 +24,7 @@
 		569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861F28E5E08A00994E47 /* DataTaskResultDataFormatter.swift */; };
 		569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862328E5F3FD00994E47 /* HTTPMethod.swift */; };
 		569C862628E5F45200994E47 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862528E5F45200994E47 /* APIRequest.swift */; };
+		569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862728E5F58500994E47 /* URLRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		569C861F28E5E08A00994E47 /* DataTaskResultDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultDataFormatter.swift; sourceTree = "<group>"; };
 		569C862328E5F3FD00994E47 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		569C862528E5F45200994E47 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		569C862728E5F58500994E47 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				569C862328E5F3FD00994E47 /* HTTPMethod.swift */,
 				569C862528E5F45200994E47 /* APIRequest.swift */,
+				569C862728E5F58500994E47 /* URLRequestBuilder.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
+				569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */,
 				569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
