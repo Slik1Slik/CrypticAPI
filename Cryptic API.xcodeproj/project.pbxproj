@@ -21,6 +21,7 @@
 		569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861828E5DB5C00994E47 /* Date Constants.swift */; };
 		569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861B28E5DCAD00994E47 /* JSONManager.swift */; };
 		569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861D28E5DEA300994E47 /* JSONDataFormatter.swift */; };
+		569C862028E5E08A00994E47 /* DataTaskResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861F28E5E08A00994E47 /* DataTaskResultBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		569C861828E5DB5C00994E47 /* Date Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Constants.swift"; sourceTree = "<group>"; };
 		569C861B28E5DCAD00994E47 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		569C861D28E5DEA300994E47 /* JSONDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataFormatter.swift; sourceTree = "<group>"; };
+		569C861F28E5E08A00994E47 /* DataTaskResultBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				569C860F28E5D48200994E47 /* DataTaskResult.swift */,
 				569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */,
+				569C861F28E5E08A00994E47 /* DataTaskResultBuilder.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
+				569C862028E5E08A00994E47 /* DataTaskResultBuilder.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */,
