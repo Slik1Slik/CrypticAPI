@@ -19,6 +19,7 @@
 		569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C860F28E5D48200994E47 /* DataTaskResult.swift */; };
 		569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */; };
 		569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861828E5DB5C00994E47 /* Date Constants.swift */; };
+		569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C861B28E5DCAD00994E47 /* JSONManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		569C860F28E5D48200994E47 /* DataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResult.swift; sourceTree = "<group>"; };
 		569C861328E5D9DA00994E47 /* DataTaskResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskResultHandler.swift; sourceTree = "<group>"; };
 		569C861828E5DB5C00994E47 /* Date Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Constants.swift"; sourceTree = "<group>"; };
+		569C861B28E5DCAD00994E47 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				569C860B28E5D31400994E47 /* Task */,
 				569C860E28E5D47200994E47 /* Result */,
 				569C861728E5DB3E00994E47 /* Constants */,
+				569C861A28E5DCA200994E47 /* JSON */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
 				569C85ED28E5C92500994E47 /* SceneDelegate.swift */,
 				569C85EF28E5C92500994E47 /* ViewController.swift */,
@@ -115,6 +118,14 @@
 				569C861828E5DB5C00994E47 /* Date Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		569C861A28E5DCA200994E47 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				569C861B28E5DCAD00994E47 /* JSONManager.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
+				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
