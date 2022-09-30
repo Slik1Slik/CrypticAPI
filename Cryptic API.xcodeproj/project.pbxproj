@@ -29,6 +29,7 @@
 		569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862C28E5FB2600994E47 /* BackendMethod.swift */; };
 		569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */; };
 		569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863728E747DB00994E47 /* CrypticAPI.swift */; };
+		569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863D28E7489C00994E47 /* ReflectableEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		569C862C28E5FB2600994E47 /* BackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethod.swift; sourceTree = "<group>"; };
 		569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendMethod.swift; sourceTree = "<group>"; };
 		569C863728E747DB00994E47 /* CrypticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypticAPI.swift; sourceTree = "<group>"; };
+		569C863D28E7489C00994E47 /* ReflectableEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectableEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				569C862B28E5F9E600994E47 /* Backend Method */,
 				569C861728E5DB3E00994E47 /* Constants */,
 				569C861A28E5DCA200994E47 /* JSON */,
+				569C863B28E7485400994E47 /* Shared */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
 				569C85ED28E5C92500994E47 /* SceneDelegate.swift */,
 				569C85EF28E5C92500994E47 /* ViewController.swift */,
@@ -179,6 +182,14 @@
 			path = "API Backend Method";
 			sourceTree = "<group>";
 		};
+		569C863B28E7485400994E47 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				569C863D28E7489C00994E47 /* ReflectableEnum.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +262,7 @@
 			files = (
 				569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */,
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
+				569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */,
 				569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */,
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
