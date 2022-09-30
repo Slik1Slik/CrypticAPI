@@ -28,6 +28,7 @@
 		569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862928E5F87A00994E47 /* TaskBuilder.swift */; };
 		569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862C28E5FB2600994E47 /* BackendMethod.swift */; };
 		569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */; };
+		569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863728E747DB00994E47 /* CrypticAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		569C862928E5F87A00994E47 /* TaskBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuilder.swift; sourceTree = "<group>"; };
 		569C862C28E5FB2600994E47 /* BackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethod.swift; sourceTree = "<group>"; };
 		569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendMethod.swift; sourceTree = "<group>"; };
+		569C863728E747DB00994E47 /* CrypticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypticAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +166,17 @@
 			children = (
 				569C862C28E5FB2600994E47 /* BackendMethod.swift */,
 				569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */,
+				569C863628E747C100994E47 /* API Backend Method */,
 			);
 			path = "Backend Method";
+			sourceTree = "<group>";
+		};
+		569C863628E747C100994E47 /* API Backend Method */ = {
+			isa = PBXGroup;
+			children = (
+				569C863728E747DB00994E47 /* CrypticAPI.swift */,
+			);
+			path = "API Backend Method";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
+				569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */,
 				569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */,
 				569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
