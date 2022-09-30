@@ -26,8 +26,8 @@
 		569C862628E5F45200994E47 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862528E5F45200994E47 /* APIRequest.swift */; };
 		569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862728E5F58500994E47 /* URLRequestBuilder.swift */; };
 		569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862928E5F87A00994E47 /* TaskBuilder.swift */; };
-		569C862D28E5FB2600994E47 /* BackendAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862C28E5FB2600994E47 /* BackendAPIMethod.swift */; };
-		569C862F28E5FCD700994E47 /* DefaultBackendAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendAPIMethod.swift */; };
+		569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862C28E5FB2600994E47 /* BackendMethod.swift */; };
+		569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +52,8 @@
 		569C862528E5F45200994E47 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		569C862728E5F58500994E47 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		569C862928E5F87A00994E47 /* TaskBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuilder.swift; sourceTree = "<group>"; };
-		569C862C28E5FB2600994E47 /* BackendAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPIMethod.swift; sourceTree = "<group>"; };
-		569C862E28E5FCD700994E47 /* DefaultBackendAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendAPIMethod.swift; sourceTree = "<group>"; };
+		569C862C28E5FB2600994E47 /* BackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethod.swift; sourceTree = "<group>"; };
+		569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				569C860B28E5D31400994E47 /* Task */,
 				569C860E28E5D47200994E47 /* Result */,
 				569C862228E5F3EF00994E47 /* Request */,
-				569C862B28E5F9E600994E47 /* API Method */,
+				569C862B28E5F9E600994E47 /* Backend Method */,
 				569C861728E5DB3E00994E47 /* Constants */,
 				569C861A28E5DCA200994E47 /* JSON */,
 				569C85EB28E5C92500994E47 /* AppDelegate.swift */,
@@ -159,13 +159,13 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		569C862B28E5F9E600994E47 /* API Method */ = {
+		569C862B28E5F9E600994E47 /* Backend Method */ = {
 			isa = PBXGroup;
 			children = (
-				569C862C28E5FB2600994E47 /* BackendAPIMethod.swift */,
-				569C862E28E5FCD700994E47 /* DefaultBackendAPIMethod.swift */,
+				569C862C28E5FB2600994E47 /* BackendMethod.swift */,
+				569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */,
 			);
-			path = "API Method";
+			path = "Backend Method";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +240,7 @@
 			files = (
 				569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */,
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
-				569C862D28E5FB2600994E47 /* BackendAPIMethod.swift in Sources */,
+				569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */,
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
@@ -251,7 +251,7 @@
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
-				569C862F28E5FCD700994E47 /* DefaultBackendAPIMethod.swift in Sources */,
+				569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,

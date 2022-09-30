@@ -1,5 +1,5 @@
 //
-//  DefaultBackendAPIMethod.swift
+//  DefaultBackendMethod.swift
 //  Cryptic API
 //
 //  Created by Slik on 29.09.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class DefaultBackendAPIMethod : BackendAPIMethod {
+final class DefaultBackendMethod : BackendMethod {
     
     private(set) var request: APIRequest = .init()
     
@@ -16,15 +16,15 @@ final class DefaultBackendAPIMethod : BackendAPIMethod {
     }
 }
 
-extension DefaultBackendAPIMethod {
-    func performCompletionBlock(on queue: DispatchQueue) -> Self {
+extension DefaultBackendMethod {
+    func performCompletionBlock(on queue: DispatchQueue) -> BackendMethod {
         request.completionQueue = queue
         return self
     }
 }
 
-extension DefaultBackendAPIMethod {
-    func configureRequest(with config: APIRequestConfiguration) -> BackendAPIMethod {
+extension DefaultBackendMethod {
+    func configureRequest(with config: APIRequestConfiguration) -> BackendMethod {
         request.config = config
         return self
     }
