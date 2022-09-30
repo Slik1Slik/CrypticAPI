@@ -30,6 +30,7 @@
 		569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */; };
 		569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863728E747DB00994E47 /* CrypticAPI.swift */; };
 		569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863D28E7489C00994E47 /* ReflectableEnum.swift */; };
+		569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864128E7525900994E47 /* APIBackendMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendMethod.swift; sourceTree = "<group>"; };
 		569C863728E747DB00994E47 /* CrypticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypticAPI.swift; sourceTree = "<group>"; };
 		569C863D28E7489C00994E47 /* ReflectableEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectableEnum.swift; sourceTree = "<group>"; };
+		569C864128E7525900994E47 /* APIBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBackendMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				569C863728E747DB00994E47 /* CrypticAPI.swift */,
+				569C864128E7525900994E47 /* APIBackendMethod.swift */,
 			);
 			path = "API Backend Method";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */,
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
+				569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */,
 				569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */,
 				569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */,
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
