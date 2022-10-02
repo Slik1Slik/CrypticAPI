@@ -31,6 +31,9 @@
 		569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863728E747DB00994E47 /* CrypticAPI.swift */; };
 		569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863D28E7489C00994E47 /* ReflectableEnum.swift */; };
 		569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864128E7525900994E47 /* APIBackendMethod.swift */; };
+		569C864428E7530E00994E47 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864328E7530E00994E47 /* Assets.swift */; };
+		569C864728E754F400994E47 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864628E754F400994E47 /* Date + Extensions.swift */; };
+		569C864928E9989800994E47 /* BackendMethodWithDecodedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864828E9989800994E47 /* BackendMethodWithDecodedResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		569C863728E747DB00994E47 /* CrypticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypticAPI.swift; sourceTree = "<group>"; };
 		569C863D28E7489C00994E47 /* ReflectableEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectableEnum.swift; sourceTree = "<group>"; };
 		569C864128E7525900994E47 /* APIBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBackendMethod.swift; sourceTree = "<group>"; };
+		569C864328E7530E00994E47 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		569C864628E754F400994E47 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		569C864828E9989800994E47 /* BackendMethodWithDecodedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethodWithDecodedResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				569C860E28E5D47200994E47 /* Result */,
 				569C862228E5F3EF00994E47 /* Request */,
 				569C862B28E5F9E600994E47 /* Backend Method */,
+				569C864528E754DB00994E47 /* Extensions */,
 				569C861728E5DB3E00994E47 /* Constants */,
 				569C861A28E5DCA200994E47 /* JSON */,
 				569C863B28E7485400994E47 /* Shared */,
@@ -171,6 +178,7 @@
 			children = (
 				569C862C28E5FB2600994E47 /* BackendMethod.swift */,
 				569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */,
+				569C864828E9989800994E47 /* BackendMethodWithDecodedResult.swift */,
 				569C863628E747C100994E47 /* API Backend Method */,
 			);
 			path = "Backend Method";
@@ -181,6 +189,7 @@
 			children = (
 				569C863728E747DB00994E47 /* CrypticAPI.swift */,
 				569C864128E7525900994E47 /* APIBackendMethod.swift */,
+				569C864328E7530E00994E47 /* Assets.swift */,
 			);
 			path = "API Backend Method";
 			sourceTree = "<group>";
@@ -191,6 +200,14 @@
 				569C863D28E7489C00994E47 /* ReflectableEnum.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		569C864528E754DB00994E47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				569C864628E754F400994E47 /* Date + Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */,
+				569C864428E7530E00994E47 /* Assets.swift in Sources */,
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
 				569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */,
 				569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */,
@@ -279,8 +297,10 @@
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
+				569C864928E9989800994E47 /* BackendMethodWithDecodedResult.swift in Sources */,
 				569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
+				569C864728E754F400994E47 /* Date + Extensions.swift in Sources */,
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,
 				569C862628E5F45200994E47 /* APIRequest.swift in Sources */,
