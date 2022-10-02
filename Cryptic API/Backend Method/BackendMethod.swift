@@ -27,3 +27,12 @@ extension BackendMethod {
         return self
     }
 }
+
+extension BackendMethod {
+    
+    func task(completion: @escaping (DataTaskResult<Data, APIError>) -> ()) -> Task {
+        let requestWithCompletionBlock = self.request
+        requestWithCompletionBlock.completion = completion
+        return DataTaskBuilder().build(requestWithCompletionBlock)
+    }
+}
