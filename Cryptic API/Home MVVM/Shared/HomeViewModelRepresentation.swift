@@ -9,5 +9,6 @@ import Foundation
 
 struct HomeViewModelRepresentation {
     var title: String
+    var subtitle: String
     var details: String
 }

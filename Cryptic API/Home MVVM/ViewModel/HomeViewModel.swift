@@ -59,6 +59,7 @@ extension HomeViewModel {
         representedData = rawData.map { assetMetrics in
             let details = "\(assetMetrics.marketData.priceUSD)".prefix(6).description
             return HomeViewModelRepresentation(title: assetMetrics.symbol,
+                                               subtitle: assetMetrics.name,
                                                details: details)
         }
     }
