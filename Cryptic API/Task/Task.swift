@@ -20,7 +20,11 @@ final class DataTask : Task {
     
     var state: TaskState
     
-    private var dataTask: URLSessionDataTask?
+    private var dataTask: URLSessionDataTask? {
+        didSet {
+            updateTaskState()
+        }
+    }
     
     init(dataTask: URLSessionDataTask?) {
         self.dataTask = dataTask
@@ -38,12 +42,32 @@ final class DataTask : Task {
     func resume() {
         dataTask?.resume()
     }
+    
+    private func updateTaskState() {
+        guard let task = dataTask else {
+            state = .finished
+            return
+        }
+        switch task.state {
+        case .running:
+            state = .inProgress
+        case .suspended:
+            state = .suspended
+        case .canceling:
+            state = .cancelled
+        case .completed:
+            state = .finished
+        @unknown default:
+            state = .failed
+        }
+    }
 }
 
 enum TaskState {
     case created
     case cancelled
     case inProgress
+    case suspended
     case failed
     case finished
 }
