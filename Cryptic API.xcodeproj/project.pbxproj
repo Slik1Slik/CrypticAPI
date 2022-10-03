@@ -42,6 +42,7 @@
 		569C866028E9A9D500994E47 /* AssetMarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865F28E9A9D500994E47 /* AssetMarketData.swift */; };
 		569C866228E9AA4D00994E47 /* AssetMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866128E9AA4D00994E47 /* AssetMetrics.swift */; };
 		569C866528E9AE5500994E47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866428E9AE5500994E47 /* NetworkService.swift */; };
+		569C866928EB900200994E47 /* ViewModelListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866828EB900200994E47 /* ViewModelListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		569C865F28E9A9D500994E47 /* AssetMarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMarketData.swift; sourceTree = "<group>"; };
 		569C866128E9AA4D00994E47 /* AssetMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMetrics.swift; sourceTree = "<group>"; };
 		569C866428E9AE5500994E47 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		569C866828EB900200994E47 /* ViewModelListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				569C860E28E5D47200994E47 /* Result */,
 				569C862228E5F3EF00994E47 /* Request */,
 				569C862B28E5F9E600994E47 /* Backend Method */,
+				569C866A28EB906300994E47 /* Architecture */,
 				569C864E28E9A2F200994E47 /* Home MVVM */,
 				569C866328E9AE3D00994E47 /* Network */,
 				569C864528E754DB00994E47 /* Extensions */,
@@ -282,6 +285,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		569C866A28EB906300994E47 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				569C866828EB900200994E47 /* ViewModelListener.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +385,7 @@
 				569C866228E9AA4D00994E47 /* AssetMetrics.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
 				569C865C28E9A83800994E47 /* HomeViewModelRepresentation.swift in Sources */,
+				569C866928EB900200994E47 /* ViewModelListener.swift in Sources */,
 				569C866528E9AE5500994E47 /* NetworkService.swift in Sources */,
 				569C865A28E9A6A300994E47 /* HomeViewModelError.swift in Sources */,
 				569C864B28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift in Sources */,
