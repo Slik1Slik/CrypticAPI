@@ -34,6 +34,14 @@
 		569C864428E7530E00994E47 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864328E7530E00994E47 /* Assets.swift */; };
 		569C864728E754F400994E47 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864628E754F400994E47 /* Date + Extensions.swift */; };
 		569C864B28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864A28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift */; };
+		569C865628E9A36900994E47 /* HomeViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865528E9A36900994E47 /* HomeViewModelInput.swift */; };
+		569C865828E9A3A900994E47 /* HomeViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865728E9A3A900994E47 /* HomeViewModelOutput.swift */; };
+		569C865A28E9A6A300994E47 /* HomeViewModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865928E9A6A300994E47 /* HomeViewModelError.swift */; };
+		569C865C28E9A83800994E47 /* HomeViewModelRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865B28E9A83800994E47 /* HomeViewModelRepresentation.swift */; };
+		569C865E28E9A87900994E47 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865D28E9A87900994E47 /* HomeViewModel.swift */; };
+		569C866028E9A9D500994E47 /* AssetMarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C865F28E9A9D500994E47 /* AssetMarketData.swift */; };
+		569C866228E9AA4D00994E47 /* AssetMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866128E9AA4D00994E47 /* AssetMetrics.swift */; };
+		569C866528E9AE5500994E47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866428E9AE5500994E47 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,14 @@
 		569C864328E7530E00994E47 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		569C864628E754F400994E47 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
 		569C864A28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethodWithDecodedResult.swift; sourceTree = "<group>"; };
+		569C865528E9A36900994E47 /* HomeViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelInput.swift; sourceTree = "<group>"; };
+		569C865728E9A3A900994E47 /* HomeViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelOutput.swift; sourceTree = "<group>"; };
+		569C865928E9A6A300994E47 /* HomeViewModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelError.swift; sourceTree = "<group>"; };
+		569C865B28E9A83800994E47 /* HomeViewModelRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelRepresentation.swift; sourceTree = "<group>"; };
+		569C865D28E9A87900994E47 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		569C865F28E9A9D500994E47 /* AssetMarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMarketData.swift; sourceTree = "<group>"; };
+		569C866128E9AA4D00994E47 /* AssetMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMetrics.swift; sourceTree = "<group>"; };
+		569C866428E9AE5500994E47 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,8 @@
 				569C860E28E5D47200994E47 /* Result */,
 				569C862228E5F3EF00994E47 /* Request */,
 				569C862B28E5F9E600994E47 /* Backend Method */,
+				569C864E28E9A2F200994E47 /* Home MVVM */,
+				569C866328E9AE3D00994E47 /* Network */,
 				569C864528E754DB00994E47 /* Extensions */,
 				569C861728E5DB3E00994E47 /* Constants */,
 				569C861A28E5DCA200994E47 /* JSON */,
@@ -210,6 +228,60 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		569C864E28E9A2F200994E47 /* Home MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				569C865328E9A34500994E47 /* Model */,
+				569C865228E9A34000994E47 /* View */,
+				569C865128E9A33900994E47 /* ViewModel */,
+				569C865428E9A34A00994E47 /* Shared */,
+			);
+			path = "Home MVVM";
+			sourceTree = "<group>";
+		};
+		569C865128E9A33900994E47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				569C865528E9A36900994E47 /* HomeViewModelInput.swift */,
+				569C865728E9A3A900994E47 /* HomeViewModelOutput.swift */,
+				569C865D28E9A87900994E47 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		569C865228E9A34000994E47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		569C865328E9A34500994E47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				569C866128E9AA4D00994E47 /* AssetMetrics.swift */,
+				569C865F28E9A9D500994E47 /* AssetMarketData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		569C865428E9A34A00994E47 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				569C865928E9A6A300994E47 /* HomeViewModelError.swift */,
+				569C865B28E9A83800994E47 /* HomeViewModelRepresentation.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		569C866328E9AE3D00994E47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				569C866428E9AE5500994E47 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,13 +362,20 @@
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
+				569C865828E9A3A900994E47 /* HomeViewModelOutput.swift in Sources */,
+				569C866028E9A9D500994E47 /* AssetMarketData.swift in Sources */,
 				569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */,
 				569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */,
+				569C865E28E9A87900994E47 /* HomeViewModel.swift in Sources */,
 				569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */,
+				569C866228E9AA4D00994E47 /* AssetMetrics.swift in Sources */,
 				569C860628E5CDA700994E47 /* DescribedError.swift in Sources */,
+				569C865C28E9A83800994E47 /* HomeViewModelRepresentation.swift in Sources */,
+				569C866528E9AE5500994E47 /* NetworkService.swift in Sources */,
+				569C865A28E9A6A300994E47 /* HomeViewModelError.swift in Sources */,
 				569C864B28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift in Sources */,
 				569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
@@ -304,6 +383,7 @@
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,
 				569C862628E5F45200994E47 /* APIRequest.swift in Sources */,
+				569C865628E9A36900994E47 /* HomeViewModelInput.swift in Sources */,
 				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
