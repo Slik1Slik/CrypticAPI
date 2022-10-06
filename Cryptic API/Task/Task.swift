@@ -18,52 +18,86 @@ protocol Task : AnyObject {
 
 final class DataTask : Task {
     
-    var state: TaskState
-    
-    private var dataTask: URLSessionDataTask? {
+    var state: TaskState = .none {
         didSet {
-            updateTaskState()
+            onTaskStateChanged(state)
         }
+    }
+    
+    private var dataTask: URLSessionDataTask?
+    
+    private var request: APIRequest
+    
+    private var onTaskStateChanged: (TaskState) -> () = { _ in }
+    
+    init(request: APIRequest) {
+        self.request = request
     }
     
     init(dataTask: URLSessionDataTask?) {
         self.dataTask = dataTask
-        self.state = dataTask == nil ? .failed : .created
+        self.request = .init()
     }
     
     func cancel() {
         dataTask?.cancel()
+        state = .cancelled
     }
     
     func suspend() {
         dataTask?.suspend()
+        state = .suspended
     }
     
     func resume() {
+        if state != .suspended {
+            setNewTask()
+        }
         dataTask?.resume()
+        state = .inProgress
     }
     
-    private func updateTaskState() {
-        guard let task = dataTask else {
-            state = .finished
+    private func setNewTask() {
+        guard let urlRequest = try? APIURLRequestBuilder().build(from: request.config) else
+        {
+            request.completion(.failure(.failedToCreateURL))
             return
         }
-        switch task.state {
-        case .running:
-            state = .inProgress
-        case .suspended:
-            state = .suspended
-        case .canceling:
-            state = .cancelled
-        case .completed:
-            state = .finished
-        @unknown default:
-            state = .failed
+        dataTask = createDataTask(from: urlRequest)
+        state = .created
+    }
+    
+    private func createDataTask(from urlRequest: URLRequest) -> URLSessionDataTask {
+        return URLSession.shared.dataTask(with: urlRequest) { [weak self] data, response, error in
+            guard let self = self else { return }
+            self.request.completionQueue.async {
+                let handler = DataTaskResultHandler(data: data,
+                                                    response: response,
+                                                    error: error)
+                handler.handle { result in
+                    switch result {
+                    case .success(let data):
+                        self.request.completion(.success(data))
+                        self.state = .finished
+                    case .failure(let error):
+                        self.request.completion(.failure(error))
+                        self.state = .failed
+                    }
+                }
+            }
         }
     }
 }
 
+extension DataTask : ObservableTask {
+    
+    func observe(onChanged: @escaping (TaskState) -> ()) {
+        onTaskStateChanged = onChanged
+    }
+}
+
 enum TaskState {
+    case none
     case created
     case cancelled
     case inProgress
