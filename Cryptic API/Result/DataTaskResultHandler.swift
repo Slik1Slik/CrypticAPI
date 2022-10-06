@@ -25,7 +25,13 @@ final class DataTaskResultHandler {
     func handle(completion: @escaping (DataTaskResult<Data, APIError>) -> ())
     {
         if let data = data {
-            completion(.success(data))
+            let dataFormattingResult = DefaultDataTaskResultDataFormatter().format(from: data)
+            switch dataFormattingResult {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
             return
         }
         if let response = response,
@@ -38,6 +44,12 @@ final class DataTaskResultHandler {
         }
         if let error = error
         {
+            if let urlError = error as? URLError,
+               let urlErrorCode = URLErrorCode(rawValue: urlError.errorCode)
+            {
+                completion(.failure(APIError.errorFrom(urlErrorCode)))
+                return
+            }
             completion(.failure(APIError.unknownServersideError(error)))
             return
         }
