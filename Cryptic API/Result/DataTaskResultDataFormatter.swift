@@ -27,9 +27,9 @@ final class DefaultDataTaskResultDataFormatter : DataTaskResultDataFormatter {
             return .failure(error)
         }
         
-        if let jsonData = jsonObject["data"] as? JSONObject,
-           let data = jsonData.data(),
-           let formattedData = data.formatter().eraseStandaloneKeys().data()
+        if let jsonData = jsonObject["data"],
+           let unwrappedJsonData = jsonData,
+           let formattedData = try? JSONSerialization.data(withJSONObject: unwrappedJsonData, options: [])
         {
             return .success(formattedData)
         }
