@@ -9,10 +9,20 @@ import Foundation
 
 final class DataTaskResultHandler {
     
-    static func handle(data: Data?,
-                       response: URLResponse?,
-                       error: Error?,
-                       completion: @escaping (DataTaskResult<Data, APIError>) -> ())
+    private var data: Data?
+    private var response: URLResponse?
+    private var error: Error?
+    
+    init(data: Data?,
+         response: URLResponse?,
+         error: Error?)
+    {
+        self.data = data
+        self.response = response
+        self.error = error
+    }
+    
+    func handle(completion: @escaping (DataTaskResult<Data, APIError>) -> ())
     {
         if let data = data {
             completion(.success(data))
