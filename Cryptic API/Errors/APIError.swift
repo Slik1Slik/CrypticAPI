@@ -18,6 +18,7 @@ enum APIError : DescribedError {
     case failedToCreateURL
     case notHTTPResponse
     case unknownServersideError(Error)
+    case unknownSessionError(URLErrorCode)
     case unknownError
     case decodingFailed
     case encodingFailed
@@ -37,7 +38,7 @@ enum APIError : DescribedError {
         case .tooManyRequests:
             return "You've made too many requests to the server. Please, try again later or contact us."
         case .internalServerError:
-            return "InternalServerError."
+            return "Internal Server Error."
         case .failedToCreateURL:
             return "Failed to make a request. Please, double-check input."
         case .notHTTPResponse:
@@ -49,11 +50,13 @@ enum APIError : DescribedError {
         case .decodingFailed:
             return "Failed to decode data. Please, try again later."
         case .encodingFailed:
-            return "Failed to decode data. Please, try again later."
+            return "Failed to encode data. Please, try again later."
         case .incorrectDataFormat:
             return "Incorrect data format."
         case .noConnection:
-            return "No internet connection. Please, restore the connection."
+            return "No internet connection. Please, restore the connection if you can."
+        case .unknownSessionError(let error):
+            return error.localizedDescription
         }
     }
     
@@ -67,6 +70,42 @@ enum APIError : DescribedError {
         case 500: return .internalServerError
         default:
             return nil
+        }
+    }
+}
+//MARK: - APIError from URLErrorCode
+extension APIError {
+    
+    static func errorFrom(_ urlErrorCode: URLErrorCode) -> Self {
+        switch urlErrorCode {
+        case .badURL:
+            return .failedToCreateURL
+        case .unsupportedURL:
+            return.failedToCreateURL
+        case .networkConnectionLost:
+            return .noConnection
+        case .httpTooManyRedirects:
+            return .tooManyRequests
+        case .notConnectedToInternet:
+            return .noConnection
+        case .userCancelledAuthentication:
+            return .unauthorized
+        case .userAuthenticationRequired:
+            return .unauthorized
+        case .cannotDecodeRawData:
+            return .decodingFailed
+        case .cannotDecodeContentData:
+            return .decodingFailed
+        case .dataNotAllowed:
+            return .incorrectDataFormat
+        case .noPermissionsToReadFile:
+            return .forbidden
+        case .clientCertificateRejected:
+            return .unauthorized
+        case .clientCertificateRequired:
+            return .unauthorized
+        default:
+            return .unknownSessionError(urlErrorCode)
         }
     }
 }
