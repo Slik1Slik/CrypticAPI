@@ -20,46 +20,58 @@ final class HomeViewModel : HomeViewModelProtocol {
     var representedData: [HomeViewModelRepresentation] = []
     private var cachedRepresentedData: [HomeViewModelRepresentation] = []
     
-    private var rawData: [AssetMetrics] = []
+    private var rawData: [AssetResponseItem] = []
     
-    private var canUpdate: Bool = true
+    private var canUpdate: Bool = NetworkService.shared.isConnectionAvailable
     
-    private var task: Task = DataTask(dataTask: nil) {
-        didSet {
-            onTaskStateChanged(task.state)
-        }
-    }
+    private var task: Task = DataTask(request: .init())
 }
 //MARK: - Update
 extension HomeViewModel {
     
     func update() {
-        guard canUpdate else { return }
+        guard canUpdate else {
+            onError(.noInternetConnection)
+            return
+        }
         task =
             CrypticAPI
             .Assets
             .all
-            .decode(into: [AssetMetrics].self)
-            .task { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .success(let metrcis):
-                    self.rawData = metrcis
-                    self.parseRawData()
-                case .failure(let error):
-                    self.handle(error)
-                }
+            .configure { request in
+                request.config.parameters["fields"] = "metrics, symbol, name"
             }
+            .decode(into: [AssetResponseItem].self)
+            .task { [weak self] result in
+                self?.handle(result)
+            }
+        observeTask()
         task.resume()
     }
     
+    private func handle(_ dataTaskResult: DataTaskResult<[AssetResponseItem], APIError>) {
+        switch dataTaskResult {
+        case .success(let response):
+            rawData = response
+            parseRawData()
+            cachedRepresentedData = representedData
+        case .failure(let error):
+            handle(error)
+        }
+    }
+    
     private func parseRawData() {
-        representedData = rawData.map { assetMetrics in
-            let details = "\(assetMetrics.marketData.priceUSD)".prefix(6).description
-            return HomeViewModelRepresentation(title: assetMetrics.symbol,
-                                               subtitle: assetMetrics.name,
+        representedData = rawData.map { response in
+            let priceUSD = response.metrics.marketData.priceUSD
+            let details = "\(Double(round(10000 * priceUSD) / 10000))"
+            return HomeViewModelRepresentation(title: response.symbol,
+                                               subtitle: response.name,
                                                details: details)
         }
+    }
+    
+    private func observeTask() {
+        (task as? ObservableTask)?.observe(onChanged: onTaskStateChanged)
     }
 }
 //MARK: - Search
@@ -69,6 +81,7 @@ extension HomeViewModel {
         
         guard !text.isEmpty else {
             representedData = cachedRepresentedData
+            onSearchCompleted()
             return
         }
         
@@ -91,7 +104,12 @@ extension HomeViewModel {
 extension HomeViewModel {
     
     func handle(_ error: APIError) {
-        onError(.someDataLost(error))
+        switch error {
+        case .noConnection:
+            onError(.noInternetConnection)
+        default:
+            onError(.someDataLost(error))
+        }
     }
 }
 //MARK: - Network
@@ -120,5 +138,6 @@ extension HomeViewModel {
     
     @objc private func onInternetConnectionDidRestore() {
         canUpdate = true
+        update()
     }
 }
