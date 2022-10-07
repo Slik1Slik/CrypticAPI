@@ -9,8 +9,6 @@ import Foundation
 
 struct AssetMetrics : Decodable {
     
-    var symbol: String = ""
-    var name: String = ""
     var marketData: AssetMarketData = .init()
     
     enum CodingKeys: String, CodingKey {
