@@ -54,7 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		568BBB8828F044FF0061A662 /* README.cd.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.cd.md; sourceTree = "<group>"; };
+		568BBB8828F044FF0061A662 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		569C85E828E5C92500994E47 /* Cryptic API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptic API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		569C85EB28E5C92500994E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		569C85ED28E5C92500994E47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		569C85DF28E5C92500994E47 = {
 			isa = PBXGroup;
 			children = (
-				568BBB8828F044FF0061A662 /* README.cd.md */,
+				568BBB8828F044FF0061A662 /* README.md */,
 				569C85EA28E5C92500994E47 /* Cryptic API */,
 				569C85E928E5C92500994E47 /* Products */,
 			);
