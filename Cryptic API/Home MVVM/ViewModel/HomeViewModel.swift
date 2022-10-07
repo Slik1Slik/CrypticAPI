@@ -30,10 +30,17 @@ final class HomeViewModel : HomeViewModelProtocol {
 extension HomeViewModel {
     
     func update() {
-        guard canUpdate else {
-            onError(.noInternetConnection)
-            return
-        }
+        
+        // Lines below are commented out, as there's a bug in the last emulator version
+        // which makes NWPathMonitor instance set its current path status to unsatisfied
+        // when the connection is actually available.
+        // When it is not, the property, on the contrary, is set to satisfied.
+        // Once it's solved, I fix this
+        
+//        guard canUpdate else {
+//            onError(.noInternetConnection)
+//            return
+//        }
         task =
             CrypticAPI
             .Assets
