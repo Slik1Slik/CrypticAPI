@@ -25,10 +25,10 @@ final class DataTaskBuilder : TaskBuilder {
         
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             request.completionQueue.async {
-                DataTaskResultHandler.handle(data: data,
-                                             response: response,
-                                             error: error,
-                                             completion: request.completion)
+                let handler = DataTaskResultHandler(data: data,
+                                                    response: response,
+                                                    error: error)
+                handler.handle(completion: request.completion)
             }
         }
         return DataTask(dataTask: task)
