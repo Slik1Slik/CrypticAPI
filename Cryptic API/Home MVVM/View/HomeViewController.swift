@@ -18,7 +18,6 @@ final class HomeViewController: UIViewController {
         label.font = .preferredFont(forTextStyle: .title1)
         label.text = "No assets found"
         label.textColor = .systemGray3
-        label.isHidden = true
         return label
     }()
     
