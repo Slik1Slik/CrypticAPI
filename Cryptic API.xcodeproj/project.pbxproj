@@ -52,7 +52,6 @@
 		569C868128EB9B0D00994E47 /* AssetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C868028EB9B0D00994E47 /* AssetResponse.swift */; };
 		569CA3C328EDE003003B7F2A /* ObservableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C228EDE003003B7F2A /* ObservableTask.swift */; };
 		569CA3C828EEF18B003B7F2A /* URLErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C728EEF18B003B7F2A /* URLErrorCode.swift */; };
-		569CA3CA28EF1FBD003B7F2A /* TaskBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +102,6 @@
 		569C868028EB9B0D00994E47 /* AssetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetResponse.swift; sourceTree = "<group>"; };
 		569CA3C228EDE003003B7F2A /* ObservableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTask.swift; sourceTree = "<group>"; };
 		569CA3C728EEF18B003B7F2A /* URLErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLErrorCode.swift; sourceTree = "<group>"; };
-		569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +175,6 @@
 			children = (
 				569C860C28E5D32500994E47 /* Task.swift */,
 				569CA3C228EDE003003B7F2A /* ObservableTask.swift */,
-				569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -439,7 +436,6 @@
 				569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */,
 				569C867228EB918800994E47 /* LayoutGuideConstants.swift in Sources */,
 				569C867428EB93CE00994E47 /* HomeTableViewCell.swift in Sources */,
-				569CA3CA28EF1FBD003B7F2A /* TaskBuilder.swift in Sources */,
 				569C866C28EB90B300994E47 /* HomeViewController.swift in Sources */,
 				569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */,
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
