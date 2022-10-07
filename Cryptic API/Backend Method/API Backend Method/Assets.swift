@@ -15,7 +15,7 @@ extension CrypticAPI {
             let config = APIRequestConfiguration(path: path,
                                                  parameters: parameters,
                                                  httpMethod: .get,
-                                                 apiVersion: "v1")
+                                                 apiVersion: "v2")
             return APIRequest(config: config)
         }
         
@@ -27,14 +27,14 @@ extension CrypticAPI {
         case timeseries(AssetKey, TimeseriesOption)
 
         var path: String {
-            var path: String = ""
+            var path: String = typeName()
             switch self {
                 case .all: break
-                case .profile(let key): path = "\(key)/\(caseName())"
-                case .marketData(let key): path = "\(key)/metrics/market-data"
-                case .timeseries(let key, _): path = "\(key)/metrics/price/time-series"
+                case .profile(let key): path += "/\(key)/\(caseName())"
+                case .marketData(let key): path += "/\(key)/metrics/market-data"
+                case .timeseries(let key, _): path += "/\(key)/metrics/price/time-series"
             }
-            return "\(typeName())/\(path)"
+            return path
         }
 
         var parameters: [String : String] {
@@ -56,7 +56,7 @@ extension CrypticAPI {
         }
         
         func task() -> Task {
-            return DataTaskBuilder().build(request)
+            return DataTask(request: request)
         }
     }
 }
