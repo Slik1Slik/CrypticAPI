@@ -39,9 +39,7 @@ extension HomeViewModel {
             CrypticAPI
             .Assets
             .all
-            .decode(into: [AssetMetrics].self) { [weak self] error in
-                self?.handle(error)
-            }
+            .decode(into: [AssetMetrics].self)
             .task { [weak self] result in
                 guard let self = self else { return }
                 switch result {

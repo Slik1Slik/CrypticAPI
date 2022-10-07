@@ -18,23 +18,26 @@ final class DefaultBackendMethodWithDecodedResult<T : Decodable> : BackendMethod
     
     typealias ResultType = T
     
-    private var initialTask: Task
-    private var dataToDecode: Data
+    private var callingMethod: BackendMethod
     
     func task(completion: @escaping (DataTaskResult<ResultType, APIError>) -> ()) -> Task {
-        do {
-            let decodedResult = try JSONManager.decode(for: ResultType.self, from: dataToDecode)
-            completion(.success(decodedResult))
-        } catch let error as APIError {
-            completion(.failure(error))
-        } catch {
-            completion(.failure(.unknownError))
+        let task = callingMethod.task { dataTaskResult in
+            switch dataTaskResult {
+            case .success(let data):
+                guard let decodedData = try? JSONManager.decode(for: ResultType.self,
+                                                                from: data) else {
+                    completion(.failure(.decodingFailed))
+                    return
+                }
+                completion(.success(decodedData))
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
-        return initialTask
+        return task
     }
     
-    init(initialTask: Task, dataToDecode: Data) {
-        self.initialTask = initialTask
-        self.dataToDecode = dataToDecode
+    init(from method: BackendMethod) {
+        self.callingMethod = method
     }
 }

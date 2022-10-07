@@ -39,17 +39,7 @@ extension BackendMethod {
 
 extension BackendMethod {
     
-    func decode<ResultType : Decodable>(into: ResultType.Type,
-                                        onError: @escaping (APIError) -> ()) -> DefaultBackendMethodWithDecodedResult<ResultType> {
-        var dataToDecode = Data()
-        let task = task { result in
-            switch result {
-            case .success(let data):
-                dataToDecode = data
-            case .failure(let error):
-                onError(error)
-            }
-        }
-        return DefaultBackendMethodWithDecodedResult<ResultType>(initialTask: task, dataToDecode: dataToDecode)
+    func decode<T>(into: T.Type) -> DefaultBackendMethodWithDecodedResult<T> {
+        return DefaultBackendMethodWithDecodedResult(from: self)
     }
 }
