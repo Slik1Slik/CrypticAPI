@@ -1,5 +1,5 @@
 //
-//  DataTaskResultHandler.swift
+//  URLSessionDataTaskResultHandler.swift
 //  Cryptic API
 //
 //  Created by Slik on 29.09.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class DataTaskResultHandler {
+final class URLSessionDataTaskResultHandler {
     
     private var data: Data?
     private var response: URLResponse?

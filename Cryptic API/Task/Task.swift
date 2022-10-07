@@ -66,7 +66,7 @@ final class DataTask : Task {
         return URLSession.shared.dataTask(with: urlRequest) { [weak self] data, response, error in
             guard let self = self else { return }
             self.request.completionQueue.async {
-                let handler = DataTaskResultHandler(data: data,
+                let handler = URLSessionDataTaskResultHandler(data: data,
                                                     response: response,
                                                     error: error)
                 handler.handle { result in
