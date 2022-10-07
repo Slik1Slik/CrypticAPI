@@ -34,11 +34,6 @@ final class DataTask : Task {
         self.request = request
     }
     
-    init(dataTask: URLSessionDataTask?) {
-        self.dataTask = dataTask
-        self.request = .init()
-    }
-    
     func cancel() {
         dataTask?.cancel()
         state = .cancelled
