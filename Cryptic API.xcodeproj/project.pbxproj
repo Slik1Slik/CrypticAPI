@@ -25,9 +25,7 @@
 		569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862328E5F3FD00994E47 /* HTTPMethod.swift */; };
 		569C862628E5F45200994E47 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862528E5F45200994E47 /* APIRequest.swift */; };
 		569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862728E5F58500994E47 /* URLRequestBuilder.swift */; };
-		569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862928E5F87A00994E47 /* TaskBuilder.swift */; };
 		569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862C28E5FB2600994E47 /* BackendMethod.swift */; };
-		569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */; };
 		569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863728E747DB00994E47 /* CrypticAPI.swift */; };
 		569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C863D28E7489C00994E47 /* ReflectableEnum.swift */; };
 		569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C864128E7525900994E47 /* APIBackendMethod.swift */; };
@@ -43,6 +41,18 @@
 		569C866228E9AA4D00994E47 /* AssetMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866128E9AA4D00994E47 /* AssetMetrics.swift */; };
 		569C866528E9AE5500994E47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866428E9AE5500994E47 /* NetworkService.swift */; };
 		569C866928EB900200994E47 /* ViewModelListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866828EB900200994E47 /* ViewModelListener.swift */; };
+		569C866C28EB90B300994E47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866B28EB90B300994E47 /* HomeViewController.swift */; };
+		569C866E28EB914500994E47 /* UIKit + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C866D28EB914500994E47 /* UIKit + Extensions.swift */; };
+		569C867228EB918800994E47 /* LayoutGuideConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867128EB918800994E47 /* LayoutGuideConstants.swift */; };
+		569C867428EB93CE00994E47 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867328EB93CE00994E47 /* HomeTableViewCell.swift */; };
+		569C867728EB94DA00994E47 /* UISpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867628EB94DA00994E47 /* UISpacer.swift */; };
+		569C867A28EB97B500994E47 /* MVVMModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867928EB97B500994E47 /* MVVMModuleBuilder.swift */; };
+		569C867C28EB97D600994E47 /* HomeMVVMModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867B28EB97D600994E47 /* HomeMVVMModuleBuilder.swift */; };
+		569C867F28EB985300994E47 /* NavigationControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C867E28EB985300994E47 /* NavigationControllerManager.swift */; };
+		569C868128EB9B0D00994E47 /* AssetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C868028EB9B0D00994E47 /* AssetResponse.swift */; };
+		569CA3C328EDE003003B7F2A /* ObservableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C228EDE003003B7F2A /* ObservableTask.swift */; };
+		569CA3C828EEF18B003B7F2A /* URLErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C728EEF18B003B7F2A /* URLErrorCode.swift */; };
+		569CA3CA28EF1FBD003B7F2A /* TaskBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +76,7 @@
 		569C862328E5F3FD00994E47 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		569C862528E5F45200994E47 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		569C862728E5F58500994E47 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
-		569C862928E5F87A00994E47 /* TaskBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuilder.swift; sourceTree = "<group>"; };
 		569C862C28E5FB2600994E47 /* BackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendMethod.swift; sourceTree = "<group>"; };
-		569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackendMethod.swift; sourceTree = "<group>"; };
 		569C863728E747DB00994E47 /* CrypticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypticAPI.swift; sourceTree = "<group>"; };
 		569C863D28E7489C00994E47 /* ReflectableEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectableEnum.swift; sourceTree = "<group>"; };
 		569C864128E7525900994E47 /* APIBackendMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBackendMethod.swift; sourceTree = "<group>"; };
@@ -84,6 +92,18 @@
 		569C866128E9AA4D00994E47 /* AssetMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMetrics.swift; sourceTree = "<group>"; };
 		569C866428E9AE5500994E47 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		569C866828EB900200994E47 /* ViewModelListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelListener.swift; sourceTree = "<group>"; };
+		569C866B28EB90B300994E47 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		569C866D28EB914500994E47 /* UIKit + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + Extensions.swift"; sourceTree = "<group>"; };
+		569C867128EB918800994E47 /* LayoutGuideConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGuideConstants.swift; sourceTree = "<group>"; };
+		569C867328EB93CE00994E47 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		569C867628EB94DA00994E47 /* UISpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISpacer.swift; sourceTree = "<group>"; };
+		569C867928EB97B500994E47 /* MVVMModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMModuleBuilder.swift; sourceTree = "<group>"; };
+		569C867B28EB97D600994E47 /* HomeMVVMModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMVVMModuleBuilder.swift; sourceTree = "<group>"; };
+		569C867E28EB985300994E47 /* NavigationControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerManager.swift; sourceTree = "<group>"; };
+		569C868028EB9B0D00994E47 /* AssetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetResponse.swift; sourceTree = "<group>"; };
+		569CA3C228EDE003003B7F2A /* ObservableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTask.swift; sourceTree = "<group>"; };
+		569CA3C728EEF18B003B7F2A /* URLErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLErrorCode.swift; sourceTree = "<group>"; };
+		569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +142,12 @@
 				569C862228E5F3EF00994E47 /* Request */,
 				569C862B28E5F9E600994E47 /* Backend Method */,
 				569C866A28EB906300994E47 /* Architecture */,
+				569C867828EB979B00994E47 /* MVVM Module Building */,
+				569C867D28EB983300994E47 /* Routing */,
 				569C864E28E9A2F200994E47 /* Home MVVM */,
 				569C866328E9AE3D00994E47 /* Network */,
 				569C864528E754DB00994E47 /* Extensions */,
+				569C866F28EB916B00994E47 /* UI */,
 				569C861728E5DB3E00994E47 /* Constants */,
 				569C861A28E5DCA200994E47 /* JSON */,
 				569C863B28E7485400994E47 /* Shared */,
@@ -144,6 +167,7 @@
 				569C860528E5CDA700994E47 /* DescribedError.swift */,
 				569C860728E5CDB000994E47 /* AnyError.swift */,
 				569C860928E5D17D00994E47 /* APIError.swift */,
+				569CA3C728EEF18B003B7F2A /* URLErrorCode.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -152,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				569C860C28E5D32500994E47 /* Task.swift */,
-				569C862928E5F87A00994E47 /* TaskBuilder.swift */,
+				569CA3C228EDE003003B7F2A /* ObservableTask.swift */,
+				569CA3C928EF1FBD003B7F2A /* TaskBuilder.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -198,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				569C862C28E5FB2600994E47 /* BackendMethod.swift */,
-				569C862E28E5FCD700994E47 /* DefaultBackendMethod.swift */,
 				569C864A28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift */,
 				569C863628E747C100994E47 /* API Backend Method */,
 			);
@@ -227,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				569C864628E754F400994E47 /* Date + Extensions.swift */,
+				569C866D28EB914500994E47 /* UIKit + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +280,8 @@
 		569C865228E9A34000994E47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				569C866B28EB90B300994E47 /* HomeViewController.swift */,
+				569C867328EB93CE00994E47 /* HomeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +291,7 @@
 			children = (
 				569C866128E9AA4D00994E47 /* AssetMetrics.swift */,
 				569C865F28E9A9D500994E47 /* AssetMarketData.swift */,
+				569C868028EB9B0D00994E47 /* AssetResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +319,48 @@
 				569C866828EB900200994E47 /* ViewModelListener.swift */,
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		569C866F28EB916B00994E47 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				569C867028EB917D00994E47 /* Layout */,
+				569C867528EB94CA00994E47 /* Custom */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		569C867028EB917D00994E47 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				569C867128EB918800994E47 /* LayoutGuideConstants.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		569C867528EB94CA00994E47 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				569C867628EB94DA00994E47 /* UISpacer.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		569C867828EB979B00994E47 /* MVVM Module Building */ = {
+			isa = PBXGroup;
+			children = (
+				569C867928EB97B500994E47 /* MVVMModuleBuilder.swift */,
+				569C867B28EB97D600994E47 /* HomeMVVMModuleBuilder.swift */,
+			);
+			path = "MVVM Module Building";
+			sourceTree = "<group>";
+		};
+		569C867D28EB983300994E47 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				569C867E28EB985300994E47 /* NavigationControllerManager.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,22 +433,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569C862A28E5F87A00994E47 /* TaskBuilder.swift in Sources */,
 				569C864428E7530E00994E47 /* Assets.swift in Sources */,
 				569C860828E5CDB000994E47 /* AnyError.swift in Sources */,
 				569C864228E7525900994E47 /* APIBackendMethod.swift in Sources */,
 				569C863E28E7489C00994E47 /* ReflectableEnum.swift in Sources */,
+				569C867228EB918800994E47 /* LayoutGuideConstants.swift in Sources */,
+				569C867428EB93CE00994E47 /* HomeTableViewCell.swift in Sources */,
+				569CA3CA28EF1FBD003B7F2A /* TaskBuilder.swift in Sources */,
+				569C866C28EB90B300994E47 /* HomeViewController.swift in Sources */,
 				569C862D28E5FB2600994E47 /* BackendMethod.swift in Sources */,
 				569C861C28E5DCAD00994E47 /* JSONManager.swift in Sources */,
+				569C866E28EB914500994E47 /* UIKit + Extensions.swift in Sources */,
+				569C867C28EB97D600994E47 /* HomeMVVMModuleBuilder.swift in Sources */,
 				569C862428E5F3FD00994E47 /* HTTPMethod.swift in Sources */,
 				569C85F028E5C92500994E47 /* ViewController.swift in Sources */,
+				569C868128EB9B0D00994E47 /* AssetResponse.swift in Sources */,
 				569C85EC28E5C92500994E47 /* AppDelegate.swift in Sources */,
 				569C865828E9A3A900994E47 /* HomeViewModelOutput.swift in Sources */,
+				569C867728EB94DA00994E47 /* UISpacer.swift in Sources */,
 				569C866028E9A9D500994E47 /* AssetMarketData.swift in Sources */,
 				569C863828E747DB00994E47 /* CrypticAPI.swift in Sources */,
 				569C862828E5F58500994E47 /* URLRequestBuilder.swift in Sources */,
 				569C865E28E9A87900994E47 /* HomeViewModel.swift in Sources */,
 				569C862028E5E08A00994E47 /* DataTaskResultDataFormatter.swift in Sources */,
+				569CA3C328EDE003003B7F2A /* ObservableTask.swift in Sources */,
 				569C861028E5D48200994E47 /* DataTaskResult.swift in Sources */,
 				569C861928E5DB5C00994E47 /* Date Constants.swift in Sources */,
 				569C861E28E5DEA300994E47 /* JSONDataFormatter.swift in Sources */,
@@ -388,14 +466,16 @@
 				569C866928EB900200994E47 /* ViewModelListener.swift in Sources */,
 				569C866528E9AE5500994E47 /* NetworkService.swift in Sources */,
 				569C865A28E9A6A300994E47 /* HomeViewModelError.swift in Sources */,
+				569C867F28EB985300994E47 /* NavigationControllerManager.swift in Sources */,
 				569C864B28E99EFC00994E47 /* BackendMethodWithDecodedResult.swift in Sources */,
-				569C862F28E5FCD700994E47 /* DefaultBackendMethod.swift in Sources */,
 				569C85EE28E5C92500994E47 /* SceneDelegate.swift in Sources */,
 				569C864728E754F400994E47 /* Date + Extensions.swift in Sources */,
 				569C861428E5D9DA00994E47 /* DataTaskResultHandler.swift in Sources */,
 				569C860D28E5D32500994E47 /* Task.swift in Sources */,
 				569C862628E5F45200994E47 /* APIRequest.swift in Sources */,
+				569C867A28EB97B500994E47 /* MVVMModuleBuilder.swift in Sources */,
 				569C865628E9A36900994E47 /* HomeViewModelInput.swift in Sources */,
+				569CA3C828EEF18B003B7F2A /* URLErrorCode.swift in Sources */,
 				569C860A28E5D17D00994E47 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
